@@ -1,0 +1,55 @@
+body {
+  /* default font settings */
+  /* using golden ratio for line-height */
+  /* will use relative font sizes throughout */
+  font: 100%/1.61803398875 'Merriweather', serif;
+}
+
+#content {
+  max-width: 500px;
+  margin: 18% auto 0 auto; /* put content 'sort of' in the middle */
+  text-align: center;
+}
+
+h1 {
+  font: italic normal 700 2.5em/1em 'Merriweather', serif;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font: italic normal 300 1em/1em 'Merriweather', serif;
+  padding: 0;
+  margin: 2% 0 0 0;
+}
+
+hr {
+  width: 94px; /* multiples of 3.5, half-width of background image */
+  height: 6px; /* size of background image height */
+  background: url(../images/hr-bkgd.png) repeat-x 0 0;
+  margin: 2% auto;
+  border: 0;
+}
+
+a, a:link, a:active, a:visited {
+  color: #306EFF;
+  text-decoration: none;
+  font: italic normal 400 1.2em/1em 'Merriweather', serif;
+}
+ 
+a:hover {
+  color: #F75D59;
+  text-decoration: none;
+  cursor: pointer; /* set the cursor for the <span> element */
+}
+
+@media only screen and (max-device-width:480px) and (orientation: portrait),
+       only screen and (max-device-width:768px) and (orientation: landscape) {
+  #bye::after, #hello::after {
+    content: attr(data-tooltip);
+    color: #000;
+    opacity: 0.5;
+    margin: 0 0 0 1%;
+    font-size: 0.8em;
+  }
+}
