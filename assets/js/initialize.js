@@ -43,10 +43,10 @@ document.onreadystatechange = function() {
         
         if (mobile) {
             
-            document.getElementById("links").innerHTML = "/ <a id=\"bye\">leave</a><br />/ <a id=\"hello\">contact</a>/ <a id=\"resume\">résumé</a><br />/ <a id=\"work\">portfolio</a>";
-        	document.getElementById("sep").style.visibility = "hidden";
-        	document.getElementById("content").style.maxWidth = "300px";
-        	document.getElementById("content").style.textAlign = "left";
+            document.getElementById("links").innerHTML = "/ <a id=\"bye\">leave</a><br />/ <a id=\"hello\">contact</a><br />/ <a id=\"resume\">résumé</a><br />/ <a id=\"work\">portfolio</a>";
+            document.getElementById("sep").style.visibility = "hidden";
+            document.getElementById("content").style.maxWidth = "300px";
+            document.getElementById("content").style.textAlign = "left";
         }
     
     
