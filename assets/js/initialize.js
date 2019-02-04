@@ -43,7 +43,7 @@ document.onreadystatechange = function() {
         
         if (mobile) {
             
-            document.getElementById("links").innerHTML = "/ <a id=\"bye\">leave</a><br />/ <a id=\"hello\">contact</a>";
+            document.getElementById("links").innerHTML = "/ <a id=\"bye\">leave</a><br />/ <a id=\"hello\">contact</a>/ <a id=\"resume\">résumé</a><br />/ <a id=\"work\">portfolio</a>";
         	document.getElementById("sep").style.visibility = "hidden";
         	document.getElementById("content").style.maxWidth = "300px";
         	document.getElementById("content").style.textAlign = "left";
@@ -51,14 +51,24 @@ document.onreadystatechange = function() {
     
     
         var byeAttrs = {
-    		"href"                  : "https://www.google.com/",
-    		"data-tooltip"          : "see you around!"
+    		"href"           : "https://www.google.com/",
+    		"data-tooltip"   : "see you around!"
     	};
     
     	var helloAttrs = {
-    		"href"                  : "mailto:luke@belinc.me",
-    		"data-tooltip"          : "questions or inquiries?"
+    		"href"           : "mailto:luke@belinc.me",
+    		"data-tooltip"   : "questions or inquiries?"
     	};
+	    
+	var workAttrs = {
+		"href"		 : "#"
+		"data-tooltip"   : "This link will be updated upon completion of the site"
+	};
+	    
+	var resuAttrs = {
+		"href"		 : "https://github.com/kraudo/kraudo.github.io/raw/master/downlads/LukeBelinc-Resume(Updated%20Jan%202019).pdf"
+		"data-tooltip"   : "view/download my résumé"
+	};
     
     
     
@@ -76,6 +86,8 @@ document.onreadystatechange = function() {
     
     	setAttrs(document.getElementById("bye"), byeAttrs);
     	setAttrs(document.getElementById("hello"), helloAttrs);
+	setAttrs(document.getElementById("resume"), resuAttrs);
+	setAttrs(document.getElementById("work"), workAttrs);
         
         document.getElementById("content").style.visibility = "visibile";
     	document.getElementsByTagName("div")[1].style.display = "none";
