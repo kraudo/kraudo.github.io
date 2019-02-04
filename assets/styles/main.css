@@ -6,7 +6,7 @@ body {
 }
 
 #content {
-  max-width: 500px;
+  max-width: 600px;
   margin: 18% auto 0 auto; /* put content 'sort of' in the middle */
   text-align: center;
 }
