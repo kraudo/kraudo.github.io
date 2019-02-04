@@ -61,12 +61,12 @@ document.onreadystatechange = function() {
     	};
 	    
 	var workAttrs = {
-		"href"		 : "#"
+		"href"		 : "#",
 		"data-tooltip"   : "This link will be updated upon completion of the site"
 	};
 	    
 	var resuAttrs = {
-		"href"		 : "https://github.com/kraudo/kraudo.github.io/raw/master/downlads/LukeBelinc-Resume(Updated%20Jan%202019).pdf"
+		"href"		 : "https://github.com/kraudo/kraudo.github.io/raw/master/downlads/LukeBelinc-Resume(Updated%20Jan%202019).pdf",
 		"data-tooltip"   : "view/download my résumé"
 	};
     
@@ -80,7 +80,7 @@ document.onreadystatechange = function() {
     		
     		/* change message to the user */
     		byeAttrs["data-tooltip"] = "whence you came!";
-		    document.getElementById("drop-tooltip-0").innerHTML = "whence you came!";
+		document.getElementById("drop-tooltip-0").innerHTML = "whence you came!";
 
     	}
     
