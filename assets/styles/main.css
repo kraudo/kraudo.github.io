@@ -18,7 +18,7 @@ h1 {
 }
 
 p {
-  font: italic normal 300 1em/1em 'Merriweather', serif;
+  font: normal normal 300 1em/1em 'Merriweather', serif;
   padding: 0;
   margin: 2% 0 0 0;
 }
@@ -35,7 +35,8 @@ a, a:link, a:active, a:visited {
   color: #306EFF;
   text-decoration: none;
   font: italic normal 400 1.2em/1em 'Merriweather', serif;
-  padding: 3px;
+  margin: 2px;
+  border-bottom: 1px solid black;
 }
  
 a:hover {
@@ -47,15 +48,19 @@ a:hover {
 @media only screen and (max-device-width:480px) and (orientation: portrait),
        only screen and (max-device-width:768px) and (orientation: landscape) {
 
+  #content {
+    text-align: left !important;
+  }
+
   span#links > a {
     display: block;
+    border: 0px !important;
   }
 
   span#links > a::before {
-    content: "/";
+    content: "/ ";
     color: #000;
-    margin: 0 0 0 1%;
-    font-size: 0.8em;
+    font-size: inherit;
   }
 
 }
