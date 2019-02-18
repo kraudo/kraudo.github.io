@@ -1,66 +1,70 @@
 body {
-  /* default font settings */
-  /* using golden ratio for line-height */
-  /* will use relative font sizes throughout */
-  font: 100%/1.61803398875 'Merriweather', serif;
+    /* default font settings */
+    /* using golden ratio for line-height */
+    /* will use relative font sizes throughout */
+    font: 100%/1.61803398875 'Merriweather', serif;
 }
 
 #content {
-  max-width: 600px;
-  margin: 18% auto 0 auto; /* put content 'sort of' in the middle */
-  text-align: center;
+    max-width: 600px;
+    margin: 18% auto 0 auto; /* put content 'sort of' in the middle */
+    text-align: center;
 }
 
 h1 {
-  font: italic normal 700 2.5em/1em 'Merriweather', serif;
-  margin: 0;
-  padding: 0;
+    font: italic normal 700 2.5em/1em 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
 }
 
 p {
-  font: normal normal 300 1em/1em 'Merriweather', serif;
-  padding: 0;
-  margin: 2% 0 0 0;
+    font: normal normal 300 1em/1em 'Merriweather', serif;
+    padding: 0;
+    margin: 2% 0 0 0;
 }
 
 hr {
-  width: 94px; /* multiples of 3.5, half-width of background image */
-  height: 6px; /* size of background image height */
-  background: url(../images/hr-bkgd.png) repeat-x 0 0;
-  margin: 2% auto;
-  border: 0;
+    width: 94px; /* multiples of 3.5, half-width of background image */
+    height: 6px; /* size of background image height */
+    background: url(../images/hr-bkgd.png) repeat-x 0 0;
+    margin: 2% auto;
+    border: 0;
 }
 
 a, a:link, a:active, a:visited {
-  color: #306EFF;
-  text-decoration: none;
-  font: italic normal 400 1.2em/1em 'Merriweather', serif;
-  margin: 2px;
-  border-bottom: 1px solid black;
+    color: #306EFF;
+    text-decoration: none;
+    font: italic normal 400 1.2em/1em 'Merriweather', serif;
+    margin: 2px;
+    border-bottom: 1px solid black;
 }
- 
+
 a:hover {
-  color: #F75D59;
-  text-decoration: none;
-  cursor: pointer; /* set the cursor for the <span> element */
+    color: #F75D59;
+    text-decoration: none;
+    cursor: pointer; /* set the cursor for the <span> element */
 }
 
-@media only screen and (max-device-width:480px) and (orientation: portrait),
-       only screen and (max-device-width:768px) and (orientation: landscape) {
+@media only screen and (max-device-width: 480px) and (orientation: portrait), only screen and (max-device-width: 768px) and (orientation: landscape) {
 
-  #content {
-    text-align: left !important;
-  }
+    hr {
+        display: none;
+    }
 
-  span#links > a {
-    display: block;
-    border: 0px !important;
-  }
+    #content {
+        max-width: 500px !important;
+        text-align: left !important;
+    }
 
-  span#links > a::before {
-    content: "/ ";
-    color: #000;
-    font-size: inherit;
-  }
+    span#links > a {
+        display: block;
+        border: 0px !important;
+    }
+
+    span#links > a::before {
+        content: "/ ";
+        color: #000;
+        font-size: inherit;
+    }
 
 }
