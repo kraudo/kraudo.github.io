@@ -41,7 +41,7 @@ document.onreadystatechange = function () {
 
         if (mobile) {
 
-            document.getElementById("links").innerHTML = "/ <a id=\"bye\">leave</a><br />/ <a id=\"hello\">contact</a><br />/ <a id=\"resume\">résumé</a><br />/ <a id=\"work\">portfolio</a>";
+            document.getElementById("links").innerHTML = "/ <a id=\"hello\">contact</a><br />/ <a id=\"resume\">résumé</a><br />/ <a id=\"work\">portfolio</a>";
             document.getElementById("sep").style.visibility = "hidden";
             document.getElementById("content").style.maxWidth = "300px";
             document.getElementById("content").style.textAlign = "left";
@@ -67,19 +67,6 @@ document.onreadystatechange = function () {
             "href": "./downloads/LukeBelincResume-02132019.pdf",
             "data-tooltip": "view/download my résumé"
         };
-
-
-        if (window.history.length > 1) {
-
-            /* change link features */
-            document.getElementById("bye").innerHTML = "return";
-            byeAttrs["href"] = "javascript:history.back()";
-
-            /* change message to the user */
-            byeAttrs["data-tooltip"] = "whence you came!";
-            document.getElementById("drop-tooltip-0").innerHTML = "whence you came!";
-
-        }
 
         setAttrs(document.getElementById("bye"), byeAttrs);
         setAttrs(document.getElementById("hello"), helloAttrs);

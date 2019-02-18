@@ -1,25 +1,17 @@
 div.navbar {
-  margin-top: 25%;
+  display: flex;
+  padding: 5px 0 5px 0;
+  margin: 5px auto;
   width: 100%;
   height: auto;
-  background-color: black;
-  text-align: center;
+  background-color: white;
+  border: 1px solid black;
+  justify-content: space-between;
 }
 
-ul.navlinks {
-  padding: 10px;
+div.navbar > span {
+  padding: 20px;
   background-color: inherit;
-}
-
-ul.navlinks > li {
-  padding: 10px;
-  font-size: 12px;
-  font-family: sans-serif;
-  display: inline-block;
-  list-style-type: none;
-}
-
-ul.navlinks > li > a {
-  color: white;
-  text-decoration: none;
+  align-self: center;
+  border: 1px solid black;
 }
