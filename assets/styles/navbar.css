@@ -1,18 +1,27 @@
 div.navbar {
   display: flex;
-  width: 100%;
-  top: 0;
-  margin: 0 auto;
-  padding: 5px 0 5px 0;
+  margin: 20px auto;
   height: auto;
   background-color: white;
+  justify-content: flex-start;
   border-bottom: 1px solid black;
-  justify-content: space-between;
+  width: 75%;
+  min-width: 500px;
+  max-width: 1000px;
 }
 
 div.navbar > span {
   order: 1;
-  margin: 3%;
+  padding: 20px;
   background-color: inherit;
   align-self: center;
+}
+
+.stick {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #FFF;
+  overflow: hidden;
+
 }
