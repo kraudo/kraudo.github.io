@@ -7,7 +7,7 @@ body {
 
 #content {
     max-width: 600px;
-    margin: 18% auto 0 auto; /* put content 'sort of' in the middle */
+    margin: 10% auto 0 auto; /* put content 'sort of' in the middle */
     text-align: center;
 }
 
@@ -48,7 +48,7 @@ a:hover {
 @media only screen and (max-device-width: 480px) and (orientation: portrait), only screen and (max-device-width: 768px) and (orientation: landscape) {
 
     hr {
-        display: none;
+        margin: 0;
     }
 
     #content {

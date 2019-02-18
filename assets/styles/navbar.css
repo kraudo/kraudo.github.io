@@ -5,7 +5,7 @@ div.navbar {
   width: 100%;
   height: auto;
   background-color: white;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
   justify-content: space-between;
 }
 
@@ -13,5 +13,4 @@ div.navbar > span {
   padding: 20px;
   background-color: inherit;
   align-self: center;
-  border: 1px solid black;
 }
