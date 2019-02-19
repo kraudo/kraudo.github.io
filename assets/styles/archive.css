@@ -1,0 +1,41 @@
+.top {
+    position: fixed;
+    width: 100%;
+    max-width: 1000px;
+    top: 0;
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
+    height: auto;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.browser {
+    display: flex;
+    top: 100px;
+    width: 80%;
+    margin: 20px auto 0 auto;
+    position: relative;
+    border: 1px solid black;
+    justify-content: space-around;
+}
+
+.browser > div {
+    order: 1;
+    border: 1px solid blue;
+    align-self: center;
+    max-height: available;
+}
+
+.directory {
+    width: 30%;
+}
+
+.preview {
+    width: 70%;
+}
+
