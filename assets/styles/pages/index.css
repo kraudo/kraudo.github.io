@@ -7,7 +7,7 @@
 hr#sep {
     width: 15%; /* multiples of 3.5, half-width of background image */
     height: 6px; /* size of background image height */
-    background: url(../images/hr-bkgd.png) repeat-x 0 0;
+    background: url(../../images/hr-bkgd.png) repeat-x 0 0;
     margin: 2% auto;
     border: 0;
 }

@@ -58,16 +58,6 @@ document.onreadystatechange = function () {
             "data-tooltip": "questions or inquiries?"
         };
 
-        let workAttrs = {
-            "href": "#",
-            "data-tooltip": "This link will be updated upon completion of the site"
-        };
-
-        let resuAttrs = {
-            "href": "./downloads/LukeBelincResume-02132019.pdf",
-            "data-tooltip": "view/download my résumé"
-        };
-
         setAttrs(document.getElementById("bye"), byeAttrs);
         setAttrs(document.getElementById("hello"), helloAttrs);
         setAttrs(document.getElementById("resume"), resuAttrs);

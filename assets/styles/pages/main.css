@@ -83,20 +83,8 @@ a:hover {
 
 @media only screen and (max-device-width: 480px) and (orientation: portrait), only screen and (max-device-width: 768px) and (orientation: landscape) {
 
-    #content {
+    #container {
         max-width: 500px !important;
-        text-align: left !important;
-    }
-
-    span#links > a {
-        display: block;
-        border: 0 !important;
-    }
-
-    span#links > a::before {
-        content: "/ ";
-        color: #000;
-        font-size: inherit;
     }
 
 }
