@@ -1,17 +1,22 @@
+body {
+    overflow:hidden;
+}
+
 #browser {
     display: flex;
     position: relative;
     width: 100% !important;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #browser > div {
     order: 1;
     align-self: stretch;
+    border: 1px solid #000;
 }
 
 .directory {
-    width: 30%;
+    width: 28%;
 }
 
 .preview {
@@ -30,6 +35,7 @@ span.right > div {
 ul.folder {
     list-style-type: none;
     padding: 0 0 0 3px;
+    margin: 0;
 }
 
 ul.folder > li > a {
