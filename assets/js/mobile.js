@@ -46,9 +46,7 @@ redo = function () {
         let indexTitle = document.getElementById("title");
         let links = document.getElementById("links");
         let scripts = document.getElementsByClassName("tether");
-        let content = document.getElementsByClassName("content")[0];
 
-        container.style.visibility = "hidden";
         container.style.maxWidth = "300px";
         links.style.padding = "10px";
         indexTitle.style.padding = "10px";
@@ -75,7 +73,6 @@ redo = function () {
             s.remove();
         }
 
-        container.style.visibility = "hidden";
     }
 };
 
