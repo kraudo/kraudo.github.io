@@ -1,14 +1,17 @@
-#content {
-    max-width: 600px;
-    margin: 10% auto 0 auto; /* put content 'sort of' in the middle */
+.content {
+    max-width: 800px;
+    margin: 120px auto 0 auto; /* put content 'sort of' in the middle */
     text-align: center;
 }
 
-
 hr#sep {
-    width: 94px; /* multiples of 3.5, half-width of background image */
+    width: 15%; /* multiples of 3.5, half-width of background image */
     height: 6px; /* size of background image height */
     background: url(../images/hr-bkgd.png) repeat-x 0 0;
     margin: 2% auto;
     border: 0;
+}
+
+h1.title {
+    margin: 20px;
 }

@@ -1,33 +1,17 @@
-#container {
-    display: flex;
-    height: auto;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.top {
-    position: fixed;
-    width: 100%;
-    max-width: 1000px;
-    top: 0;
-    overflow: hidden;
-}
-
 .browser {
     display: flex;
-    top: 100px;
+    top: 120px;
     margin: 20px auto 0 auto;
     position: relative;
     border: 1px solid black;
-    justify-content: space-around;
+    width: 95%;
+    justify-content: center;
 }
 
 .browser > div {
     order: 1;
     border: 1px solid blue;
     align-self: center;
-    max-height: available;
 }
 
 .directory {
@@ -37,4 +21,5 @@
 .preview {
     width: 70%;
 }
+
 

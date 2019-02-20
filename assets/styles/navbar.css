@@ -1,16 +1,14 @@
 div.navbar {
-  display: flex;
-  margin: 20px auto;
-  height: auto;
-  background-color: white;
-  justify-content: flex-start;
-  border-bottom: 1px solid black;
-  max-width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    height: auto;
+    justify-content: space-between;
+    max-width: 1000px;
+    background-color: inherit;
 }
 
 div.navbar > span {
-  order: 1;
-  padding: 20px;
-  background-color: inherit;
-  align-self: center;
+    order: 1;
+    padding: 20px;
+    align-self: center;
 }
