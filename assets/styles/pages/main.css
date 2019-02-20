@@ -48,13 +48,12 @@ a, a:link, a:active, a:visited {
     font-style: italic;
     font-weight: 400;
     margin: 2px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000;
 }
 
 a:hover {
     color: #F75D59;
     text-decoration: none;
-    cursor: pointer; /* set the cursor for the <span> element */
 }
 
 
@@ -64,7 +63,7 @@ a:hover {
     width: 100%;
     margin: auto;
     max-width: inherit;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #000;
     background-color: #FFF;
 }
 
@@ -85,7 +84,7 @@ a:hover {
 
 .content {
     width: 800px;
-    margin: 150px auto 0 auto;
+    margin: 130px auto 0 auto;
 }
 
 /* END DEFAULT STYLES */

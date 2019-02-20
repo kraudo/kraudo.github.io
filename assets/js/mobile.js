@@ -37,44 +37,33 @@ function isMobile() {
     return mobile;
 }
 
-const mobile = isMobile();
+function redo() {
 
-redo = function () {
-
-    if (mobile) {
+    if (isMobile()) {
         let container = document.getElementById("container");
         let indexTitle = document.getElementById("title");
         let links = document.getElementById("links");
-        let scripts = document.getElementsByClassName("tether");
+        let content = document.getElementsByClassName("content")[0];
 
         container.style.maxWidth = "300px";
         links.style.padding = "10px";
         indexTitle.style.padding = "10px";
+        content.style.marginTop = "150px";
 
-        /* remove tether tooltips */
-        for (let x = 0; x < links.childElementCount; x++) {
+        /* remove tether tooltip data */
+        for (let link of links.children) {
 
-            let link = links.children[x];
+            if (link.hasAttribute("data-tooltip-position")) {
+                link.removeAttribute("data-tooltip-position");
+            }
 
-            /* remove attributes if present and if link is an <a> element */
-            if (link.tagName === "a") {
-                if (link.hasAttribute("data-tooltip-position")) {
-                    link.removeAttribute("data-tooltip-position");
-                }
-                if (link.hasAttribute("data-tooltip")) {
-                    link.removeAttribute("data-tooltip");
-                }
+            if (link.hasAttribute("data-tooltip")) {
+                link.removeAttribute("data-tooltip");
             }
 
         }
-
-        /* remove tether css and scripts from page */
-        for (let s in scripts) {
-            s.remove();
-        }
-
     }
-};
+}
 
 /* reinitialize content after dom is completely loaded */
 document.addEventListener("DOMContentLoaded", redo);
