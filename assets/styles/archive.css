@@ -11,7 +11,7 @@
 .browser > div {
     order: 1;
     border: 1px solid blue;
-    align-self: center;
+    align-self: stretch;
 }
 
 .directory {
@@ -22,4 +22,12 @@
     width: 70%;
 }
 
+span.left {
+    text-align: left;
+}
+
+ul.folder {
+    list-style-type: none;
+    padding: 0 0 0 3px;
+}
 

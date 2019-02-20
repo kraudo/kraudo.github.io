@@ -1,6 +1,0 @@
-let directory = new Map();
-
-let folders   = [
-    ["Personal Projects",["Advent of Code"]],
-    ["School Projects",["Fundamental Structures (CSC 1500)","Computer Science I (CSC 2110)","Computer Science II (CSC 2200)"]]];
-

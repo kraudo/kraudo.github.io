@@ -176,8 +176,8 @@ a:hover {
     height: auto;
     max-width: 1000px;
     margin: 0 auto;
-    text-align: center;
     justify-content: space-between;
+    text-align: center;
 }
 
 /* END DEFAULT STYLES */
