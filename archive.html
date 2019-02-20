@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <!-- meta -->
     <title>kraudo.github.io > Archive</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
+    <!-- styles -->
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="./assets/styles/pages/main.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/styles/pages/archive.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/styles/pages/navbar.css"/>
 
-    <script type="text/javascript" async="async" src="./assets/js/mobile.js"></script>
+    <!-- mobile optimization -->
+    <script type="text/javascript" src="./assets/js/mobile.js"></script>
+
+    <!-- codemirror -->
+    <link rel="stylesheet" href="./assets/js/codemirror/lib/codemirror.css"/>
+    <script type="text/javascript" src="./assets/js/codemirror/lib/codemirror.js"></script>
+    <script type="text/javascript" src="./assets/js/codemirror/mode/loadmode.js"></script>
+    <script type="text/javascript" src="./assets/js/codemirror/mode/meta.js"></script>
+    <script type="text/javascript" src="./assets/js/codemirror/code.js" defer="defer"></script>
 </head>
 
 <body>
@@ -34,20 +44,19 @@
 
         <div class="directory"><h2>Files</h2>
             <span class="left">
-                <h3>Personal Projects</h3>
-                <ul title="Personal Projects" class="folder" id="personal">
-                    <li>1</li>
-                </ul>
-                <h3>Academic Projects</h3>
-                <ul title="Academic Projects" class="folder" id="academic">
-                    <li>1</li>
+                <ul title="Projects" class="folder" id="projects">
+                    <li><a href="javascript:update('https://raw.githubusercontent.com/hamzaowais/keepup/master/app/index.js', 'javascript');">keepup app / index.js</a></li>
+                    <li><a href="javascript:update('https://raw.githubusercontent.com/hamzaowais/keepup/master/companion/index.js', 'javascript')">keepup companion / index.js</a></li>
+                    <li><a href="javascript:update('https://raw.githubusercontent.com/hamzaowais/keepup/master/data%20processing/stress-data-processing.js', 'javascript')">keepup / stress-data-processing.js</a></li>
+                    <li><a href="javascript:update('https://raw.githubusercontent.com/kraudo/adventofcode/master/asciiConversion.hs', 'haskell')">asciiConversion.hs</a></li>
+                    <li><a href="javascript:update('https://raw.githubusercontent.com/kraudo/adventofcode/master/2018/day%201/Main.hs', 'haskell')">AoC Day 1 / frequencies.hs</a></li>
                 </ul>
             </span>
         </div>
 
         <div class="preview"><h2>Viewer</h2>
             <span class="right">
-                click a file to see the source
+                <textarea id="code" style="display:none;">Please choose a file from the list to view it's source code</textarea>
             </span>
         </div>
 

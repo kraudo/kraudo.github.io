@@ -1,13 +1,12 @@
 #browser {
     display: flex;
-    border: 1px solid black;
-    width: 95% !important;
+    position: relative;
+    width: 100% !important;
     justify-content: center;
 }
 
 #browser > div {
     order: 1;
-    border: 1px solid blue;
     align-self: stretch;
 }
 
@@ -19,12 +18,21 @@
     width: 70%;
 }
 
-span.left {
-    text-align: left;
+span.left,
+span.right > div {
+    text-align: left !important;
+}
+
+span.right > div {
+    font-size: .75em !important;
 }
 
 ul.folder {
     list-style-type: none;
     padding: 0 0 0 3px;
+}
+
+ul.folder > li > a {
+    font-size: 1em !important;
 }
 
