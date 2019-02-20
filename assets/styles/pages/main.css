@@ -58,12 +58,12 @@ a:hover {
 }
 
 
-.top {
+#top {
     position: fixed;
     top: 0;
     width: 100%;
     margin: auto;
-    max-width: 1000px;
+    max-width: inherit;
     border-bottom: 1px solid black;
     background-color: #FFF;
 }
@@ -77,15 +77,24 @@ a:hover {
     text-align: center;
 }
 
+
+#title,
+#links {
+    padding: 20px;
+}
+
+.content {
+    width: 800px;
+    margin: 150px auto 0 auto;
+}
+
 /* END DEFAULT STYLES */
 
 /* BEGIN MEDIA QUERIES */
 
 @media only screen and (max-device-width: 480px) and (orientation: portrait), only screen and (max-device-width: 768px) and (orientation: landscape) {
 
-    #container {
-        max-width: 500px !important;
-    }
+
 
 }
 

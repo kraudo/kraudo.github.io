@@ -2,25 +2,29 @@
 <html lang="en-US">
 <head>
     <!-- meta -->
-    <title>Nothing to see here.</title>
+    <title>Luke Belinc (kraudo.github.io)</title>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="./assets/styles/pages/main.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/styles/pages/index.css"/>
-    <link rel="stylesheet" type="text/css" href="./assets/styles/tether/tooltip-theme-arrows.css"/>
+    <link class ="tether" rel="stylesheet" type="text/css" href="./assets/styles/tether/tooltip-theme-arrows.css"/>
 
-    <!-- initializes page content and scripts -->
-    <script type="application/javascript" src="./assets/js/tether/tether.min.js"></script>
-    <script type="application/javascript" src="./assets/js/tether/drop.min.js"></script>
-    <script type="application/javascript" src="./assets/js/tether/tooltip.min.js"></script>
+    <!-- using mobile.js to manipulate what content loads and how it is to be displayed -->
+    <script type="application/javascript" src="./assets/js/mobile.js" async="async"></script>
+
+    <!-- tooltip/tether, may be removed by mobile.js -->
+    <script class="tether" type="application/javascript" src="./assets/js/tether/tether.min.js"></script>
+    <script class="tether" type="application/javascript" src="./assets/js/tether/drop.min.js"></script>
+    <script class="tether" type="application/javascript" src="./assets/js/tether/tooltip.min.js"></script>
 </head>
 
 <body>
-<!-- div#conent hidden upon page load, script below makes it visible -->
+
 <div id="container">
-    <div class="top">
-        <h1 class="title">
+
+    <div id="top">
+        <h1 id="title">
             Nice to see you here.
         </h1>
     </div>

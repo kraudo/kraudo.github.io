@@ -1,14 +1,10 @@
 div.navbar {
     display: flex;
     margin: 0 auto;
-    height: auto;
     justify-content: space-between;
-    max-width: 1000px;
-    background-color: inherit;
 }
 
 div.navbar > span {
     order: 1;
-    padding: 20px;
     align-self: center;
 }

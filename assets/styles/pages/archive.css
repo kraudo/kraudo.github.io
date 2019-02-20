@@ -1,14 +1,11 @@
-.browser {
+#browser {
     display: flex;
-    top: 120px;
-    margin: 20px auto 0 auto;
-    position: relative;
     border: 1px solid black;
-    width: 95%;
+    width: 95% !important;
     justify-content: center;
 }
 
-.browser > div {
+#browser > div {
     order: 1;
     border: 1px solid blue;
     align-self: stretch;
