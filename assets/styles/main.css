@@ -1,4 +1,11 @@
+/* BEGIN IMPORTS */
 
+/* fira code font */
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
+/* merriweather font */
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+/* END IMPORTS */
 
 /* BEGIN DEFAULT STYLES */
 
