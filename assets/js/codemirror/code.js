@@ -15,7 +15,8 @@ editor = CodeMirror.fromTextArea(document.getElementById("code"), config);
 
 // updating the text in the source code viewer
 function update(url, mode) {
-    // update message in code viewer to inform user
+    // update message in code viewer to inform user and reset mode
+    CodeMirror.autoLoadMode(editor, "");
     editor.setValue("Retrieving source code...");
     
     // 
@@ -35,15 +36,16 @@ function update(url, mode) {
         
         else if (req.readyState === 4 && req.status >= 400) {
             
-            error = {
-                msg: "Error retrieving source code",
-                url: url,
-                num: req.status,
-                text: req.statusText,
-                resp: req.responseText
-            }
+            error = "Error retrieving source code {" + 
+                "\n\turl: " + url + 
+                "\n\tstatus: " + req.status + 
+                "\n\tstatus text: " + req.statusText + 
+                "\n\tresponse: " + req.responseText
+                + "}\n";
             
-            editor.setValue(JSON.stringify(error));
+            CodeMirror.autoLoadMode(editor, "htmlmixed");
+            
+            editor.setValue(error);
             
         }
     };
