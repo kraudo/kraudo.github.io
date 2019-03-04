@@ -29,7 +29,7 @@ function update(url, mode) {
             
             CodeMirror.autoLoadMode(editor, mode);
 
-            editor.setValue(code);
+            editor.setValue(req.responseText);
             
         }
         
