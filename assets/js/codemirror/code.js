@@ -36,13 +36,12 @@ function update(url, mode) {
         
         else if (req.readyState === 4 && req.status >= 400) {
             
-            let err = "Error retrieving source code {" + 
+            let err = "Client or server error {" + 
                 "\n\turl: " + url + 
-                "\n\tstatus: " + req.status + 
-                "\n\tresponse: \n" + req.response + 
+                "\n\tstatus: " + req.status +
                 "}\n";
             
-            CodeMirror.autoLoadMode(editor, "htmlmixed");
+            CodeMirror.autoLoadMode(editor, {name: "javascript", json: true});
             
             editor.setValue(err);
             
