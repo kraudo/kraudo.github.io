@@ -65,6 +65,7 @@ a:hover {
     max-width: inherit;
     border-bottom: 1px solid #000;
     background-color: #FFF;
+    z-index: 9999;
 }
 
 #container {
