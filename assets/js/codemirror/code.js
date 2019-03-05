@@ -39,7 +39,7 @@ function update(url, mode) {
             let err = "Client or server error {" + 
                 "\n\turl: " + url + 
                 "\n\tstatus: " + req.status +
-                "}\n";
+                "\n}";
             
             CodeMirror.autoLoadMode(editor, {name: "javascript", json: true});
             
