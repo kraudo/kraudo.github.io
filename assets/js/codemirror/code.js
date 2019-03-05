@@ -19,7 +19,7 @@ function update(url, mode) {
     CodeMirror.autoLoadMode(editor, "none");
     editor.setValue("Retrieving source code...");
     
-    // 
+    // create new request
     let req = new XMLHttpRequest();
     req.open("GET", url);
 
@@ -39,9 +39,8 @@ function update(url, mode) {
             let err = "Error retrieving source code {" + 
                 "\n\turl: " + url + 
                 "\n\tstatus: " + req.status + 
-                "\n\tstatus text: " + req.statusText + 
-                "\n\tresponse: \n" + req.response
-                + "}\n";
+                "\n\tresponse: \n" + req.response + 
+                "}\n";
             
             CodeMirror.autoLoadMode(editor, "htmlmixed");
             
