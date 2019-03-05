@@ -16,7 +16,7 @@ editor = CodeMirror.fromTextArea(document.getElementById("code"), config);
 // updating the text in the source code viewer
 function update(url, mode) {
     // update message in code viewer to inform user and reset mode
-    CodeMirror.autoLoadMode(editor, "");
+    CodeMirror.autoLoadMode(editor, "none");
     editor.setValue("Retrieving source code...");
     
     // 
