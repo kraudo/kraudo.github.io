@@ -36,16 +36,16 @@ function update(url, mode) {
         
         else if (req.readyState === 4 && req.status >= 400) {
             
-            error = "Error retrieving source code {" + 
+            let err = "Error retrieving source code {" + 
                 "\n\turl: " + url + 
                 "\n\tstatus: " + req.status + 
                 "\n\tstatus text: " + req.statusText + 
-                "\n\tresponse: " + req.responseText
+                "\n\tresponse: \n" + req.responseText
                 + "}\n";
             
             CodeMirror.autoLoadMode(editor, "htmlmixed");
             
-            editor.setValue(error);
+            editor.setValue(err);
             
         }
     };
