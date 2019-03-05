@@ -40,7 +40,7 @@ function update(url, mode) {
                 "\n\turl: " + url + 
                 "\n\tstatus: " + req.status + 
                 "\n\tstatus text: " + req.statusText + 
-                "\n\tresponse: \n" + req.responseText
+                "\n\tresponse: \n" + req.response
                 + "}\n";
             
             CodeMirror.autoLoadMode(editor, "htmlmixed");
