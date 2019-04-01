@@ -1,5 +1,6 @@
 var config, editor;
 
+// Set modeURL template, %N is replaced by the mode (e.g. "javascript", "clike")
 CodeMirror.modeURL = "./assets/js/codemirror/mode/%N/%N.js";
 
 config = {
