@@ -12,15 +12,13 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/pages/archive.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/styles/pages/navbar.css"/>
 
-    <!-- mobile optimization -->
-    <script type="text/javascript" src="./assets/js/mobile.js"></script>
-
     <!-- codemirror -->
     <link rel="stylesheet" href="./assets/js/codemirror/lib/codemirror.css"/>
     <script type="text/javascript" src="./assets/js/codemirror/lib/codemirror.js"></script>
     <script type="text/javascript" src="./assets/js/codemirror/mode/loadmode.js"></script>
     <script type="text/javascript" src="./assets/js/codemirror/mode/meta.js"></script>
     <script type="text/javascript" src="./assets/js/codemirror/code.js" defer="defer"></script>
+
 </head>
 
 <body>
@@ -42,16 +40,8 @@
 
     <div class="content" id="browser">
 
-        <div class="directory"><h2>Files</h2>
-            <span class="left"><h3>Personal Projects</h3>
-                <ul title="Projects" class="folder" id="projects">
-                    <li><a href="javascript:update('https://raw.githubusercontent.com/hamzaowais/keepup/master/app/index.js', 'javascript');">keepup app / index.js</a></li>
-                    <li><a href="javascript:update('https://raw.githubusercontent.com/hamzaowais/keepup/master/companion/index.js', 'javascript')">keepup companion / index.js</a></li>
-                    <li><a href="javascript:update('https://raw.githubusercontent.com/hamzaowais/keepup/master/data%20processing/stress-data-processing.js', 'javascript')">keepup / stress-data-processing.js</a></li>
-                    <li><a href="javascript:update('https://raw.githubusercontent.com/kraudo/adventofcode/master/asciiConversion.hs', 'haskell')">asciiConversion.hs</a></li>
-                    <li><a href="javascript:update('https://raw.githubusercontent.com/kraudo/adventofcode/master/2018/day%201/Main.hs', 'haskell')">AoC Day 1 / frequencies.hs</a></li>
-                </ul>
-            </span>
+        <div id="directory"><h2>Files</h2>
+
         </div>
 
         <div class="preview"><h2>Viewer</h2>
@@ -62,5 +52,9 @@
 
     </div>
 </div>
+
+<!-- functionality -->
+<script type="text/javascript" src="./assets/js/directory.js"></script>
+<!--<script type="text/javascript" src="./assets/js/collapse_list.js"></script>-->
 </body>
 </html>
